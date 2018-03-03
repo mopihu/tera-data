@@ -1,11 +1,9 @@
 ﻿uint64 gameId
-float  x
-float  y
-float  z
-int16  w
-uint32 templateId
+vec3   loc
+angle  w
+int32  templateId
 uint32 skill
-uint32 type # 0 = Finished
+int32  type # 0 = Finished
             # 1 = Cancel (lockon)
             # 2 = Cancel (movement/etc.)
             # 3 = Special Interrupt (ex. Lancer: Shield Counter)
@@ -17,7 +15,7 @@ uint32 type # 0 = Finished
             # 13 = Out of Stamina
             # 19 = Invalid Target
             # 25 = Unknown (ex. Command: Recall)
-            # 29 = Interrupted by entering water
+            # 29 = Interrupted by Terrain (ex. entering water)
             # 36 = Lockon Cast
             # 37 = Interrupted by Loading
             # 39 = Dash Finished
